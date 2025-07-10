@@ -9,10 +9,10 @@
       rel="stylesheet"
     />
     <style>
-      body {
+        body {
         font-family: "Sono", sans-serif;
-        background: radial-gradient(#ad1e1e,#020f3f);
-        background-size: 400% 400%;
+        background: radial-gradient(#630e0e,#020f3f);
+        background-size: 200% 200%;
       }
       .pricing-container{
         display: flex;
@@ -20,18 +20,27 @@
         gap: 20px;
         align-items: center;
         height: 900px;
-      
+        
       }
       .pricing-container > *{
         flex-shrink: 0;
         flex-grow: 0;
-
       }
+      .plan-features{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        
+      }
+      
+      
        .pricing-container > .pricing-plan{
         height: 600px;
         flex-basis: 600px;
-        background: linear-gradient(rgb(83, 66, 210),rgb(145, 144, 200),rgba(222, 4, 255, 0.401));
+        background: linear-gradient(rgb(83, 66, 210),rgb(145, 144, 200),rgba(165, 4, 246, 0.401));
         border-radius: 10%;
+        text-shadow: 0px 0px 30px rgb(221, 214, 201);
         
        }
        .pricing-plan > *{
@@ -46,10 +55,14 @@
         height: 100px;
         position: relative;
         left:17%;
-        background: linear-gradient(rgb(147, 142, 236),rgb(252, 251, 251));
+        background: linear-gradient(rgb(246, 92, 3),rgb(252, 119, 3));
         border: 0cap;
         font-weight: lighter;
-        color: #000000;
+        color: #fff8f8;
+        text-shadow: 0px 0px 10px rgb(255, 255, 255);
+        text-shadow: 0px 0px 20px rgb(255, 255, 255);
+        text-shadow: 0px 0px 20px rgb(255, 255, 255);
+                
        }
        
        .pricing-plan > .plan-title{
@@ -73,11 +86,9 @@
         font-weight: lighter;
         font-size: 40px;
         padding: 0%;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
        }
-      /* Hint: What can you do with a media query and flexbox? */
-      @media (max-width: 1250px) {
-        
-      }
+      
     </style>
   </head>
 
